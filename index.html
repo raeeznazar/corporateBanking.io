@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corporate Banking</title>
+    <meta name="description" content="Tell us what you're working towards and we'll show you the expertise, funding and people that fit — not a catalogue of products." />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
+  <body>
+    <a class="c-skip-link" href="#main">Skip to main content</a>
+
+    <header class="c-header">
+      <div class="c-header__utility">
+        <div class="c-container c-header__utility-row">
+          <nav class="c-header__segments" aria-label="Banking area">
+            <a href="#">Personal</a>
+            <a href="#" aria-current="page">Business</a>
+            <a href="#">Private Bank</a>
+            <span class="c-header__region">
+              UK
+              <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </nav>
+        </div>
+      </div>
+
+      <div class="c-header__main">
+        <div class="c-container c-header__main-row">
+          <a class="c-header__brand" href="index.html" aria-label="Northbridge Corporate Banking — home">
+            <img class="c-header__logo" src="assets/MarkLogo.png" alt="" />
+            <span class="u-body-emphasis">Corporate Banking</span>
+          </a>
+
+          <nav class="c-nav-primary" aria-label="Primary">
+            <ul>
+              <li><a href="#solutions" aria-current="page">Solutions</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#insights">Insights</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </nav>
+
+          <div class="c-header__actions">
+            <a class="c-header__login" href="#">Client log in</a>
+            <a class="c-button c-button--invert c-button--sm" href="pages/enquiry.html">Start an enquiry</a>
+          </div>
+
+          <button class="c-header__menu-toggle" id="nav-open" type="button" aria-haspopup="dialog" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+            <svg class="c-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="c-mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation" data-open="false">
+      <div class="c-mobile-nav__header">
+        <a class="c-header__brand" href="index.html" aria-label="Northbridge Corporate Banking — home">
+          <img class="c-header__logo" src="assets/MarkLogo.png" alt="" />
+        </a>
+        <button class="c-mobile-nav__close" id="nav-close" type="button" aria-label="Close menu">
+          <svg class="c-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="c-mobile-nav__body">
+        <ul>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Client log in</a></li>
+        </ul>
+        <div class="c-mobile-nav__actions">
+          <a class="c-button c-button--primary c-button--block" href="pages/enquiry.html">Start an enquiry</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- Hero: mobile (< 1024px) -->
+      <section class="c-hero c-hero--mobile">
+        <div class="c-container">
+          <p class="u-eyebrow c-hero__eyebrow-mobile">Corporate &amp; Institutional</p>
+          <h1 class="u-display-mobile-screen">We start with your business. The banking follows.</h1>
+          <p class="u-body-lg c-hero__lede">Tell us what you're working towards and we'll show you the expertise and funding that fit.</p>
+          <div class="c-hero__actions">
+            <a class="c-button c-button--primary" href="#goal-selector">Find the right support</a>
+            <a class="c-button c-button--secondary c-button--on-dark" href="#cta">Speak to a specialist</a>
+          </div>
+        </div>
+
+        <div class="c-hero__media">
+          <img src="assets/hero.png" alt="Container ship being loaded at a port terminal at sunset." />
+        </div>
+
+        <div class="c-hero__stats-mobile">
+          <div class="c-container c-hero__stats-mobile-inner">
+            <div>
+              <p class="c-hero__stat-value">£1m+</p>
+              <p class="u-caption c-hero__stat-label">Facilities</p>
+            </div>
+            <div>
+              <p class="c-hero__stat-value">13</p>
+              <p class="u-caption c-hero__stat-label">Industry desks</p>
+            </div>
+            <div>
+              <p class="c-hero__stat-value">40+</p>
+              <p class="u-caption c-hero__stat-label">Markets</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero: desktop (>= 1024px) -->
+      <section class="c-hero c-hero--desktop">
+        <div class="c-container">
+          <div class="c-hero__grid">
+            <div class="c-hero__content">
+              <p class="u-eyebrow c-hero__eyebrow">Corporate &amp; Institutional Banking</p>
+              <h1 class="u-display">We start with your business. The banking follows.</h1>
+              <p class="u-body-lg c-hero__lede">Tell us what you're working towards and we'll show you the expertise, funding and people that fit — not a catalogue of products.</p>
+              <div class="c-hero__actions">
+                <a class="c-button c-button--primary" href="#goal-selector">Find the right support</a>
+                <a class="c-button c-button--secondary c-button--on-dark" href="#cta">Speak to a specialist</a>
+              </div>
+
+              <div class="c-hero__stats">
+                <div>
+                  <p class="c-hero__stat-value">£1m–£10m+</p>
+                  <p class="u-caption c-hero__stat-label">Facility range</p>
+                </div>
+                <div>
+                  <p class="c-hero__stat-value">13</p>
+                  <p class="u-caption c-hero__stat-label">Industry sectors</p>
+                </div>
+                <div>
+                  <p class="c-hero__stat-value">40+</p>
+                  <p class="u-caption c-hero__stat-label">Markets covered</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-hero__media">
+              <img src="assets/hero.png" alt="Container ship being loaded at a port terminal at sunset." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust strip -->
+      <section class="c-trust c-section--surface">
+        <div class="c-container c-trust__row">
+          <p class="u-body c-trust__label u-muted">Trusted by businesses across manufacturing, healthcare, technology, real estate and logistics</p>
+
+          <div class="embla c-trust__carousel" data-logo-carousel aria-label="Companies that trust us">
+            <div class="embla__viewport">
+              <div class="embla__container">
+                <div class="embla__slide"><img src="assets/com6.png" alt="Greenridge" /></div>
+                <div class="embla__slide"><img src="assets/com1.png" alt="Northbridge" /></div>
+                <div class="embla__slide"><img src="assets/com7.png" alt="Carewell" /></div>
+                <div class="embla__slide"><img src="assets/com4.png" alt="Rivemont" /></div>
+                <div class="embla__slide"><img src="assets/com2.png" alt="Skyline Bank" /></div>
+                <div class="embla__slide"><img src="assets/com3.png" alt="Summit Bank" /></div>
+                <div class="embla__slide"><img src="assets/com5.png" alt="Clearbank" /></div>
+                <div class="embla__slide"><img src="assets/com8.png" alt="Nexora" /></div>
+                <div class="embla__slide"><img src="assets/com9.png" alt="Havenly" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goal selector: mobile (< 1024px)-->
+      <div id="goal-selector">
+        <section class="c-section c-goal-selector--mobile c-section--surface">
+          <div class="c-container">
+            <h2 class="u-h2">What are you working towards?</h2>
+            <p class="u-body-lg u-muted">Choose one. Nothing is submitted at this stage.</p>
+
+            <div class="c-goal-list" id="goal-list-mobile" role="group" aria-label="Choose what you're working towards"></div>
+          </div>
+
+          <div class="c-goal-selector__divider"></div>
+
+          <div class="c-container">
+            <div class="c-recommend-mobile" id="recommend-mobile" data-expanded="false" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <!-- Goal selector: desktop (>= 1024px)-->
+        <section class="c-section c-goal-selector--desktop">
+          <div class="c-container">
+            <div class="c-goal-intro">
+              <div class="c-section-head__text">
+                <h2 class="u-h2">What are you working towards?</h2>
+                <p class="u-body-lg c-section-head__sub u-muted">Choose a direction and we'll bring the relevant expertise forward.</p>
+              </div>
+              <p class="u-caption c-goal-intro__note">Nothing is submitted at this stage. Selecting a goal updates the sections below.</p>
+            </div>
+
+            <div class="c-goal-grid" id="goal-grid" role="group" aria-label="Choose what you're working towards"></div>
+
+            <div class="c-recommend" id="recommend-panel" data-expanded="false" aria-live="polite"></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Solutions: mobile (< 1024px)-->
+      <div id="solutions">
+        <section class="c-section c-section--tight c-solutions-mobile">
+          <div class="c-container">
+            <h2 class="u-h2">Everything a finance team needs, in one relationship.</h2>
+
+            <div class="c-solutions-mobile__list">
+              <article class="c-solution-card">
+                <p class="u-label c-solution-card__label">Featured</p>
+                <h3 class="u-h3">Cash Management</h3>
+                <p class="u-body c-solution-card__desc">One view of every account, currency and entity.</p>
+                <a class="c-link" href="#"
+                  >Explore
+                  <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                ></a>
+              </article>
+
+              <article class="c-solution-card">
+                <h3 class="u-h3">Lending &amp; Finance</h3>
+                <p class="u-body c-solution-card__desc">Corporate, acquisition and asset finance from £1m.</p>
+                <a class="c-link" href="#"
+                  >Explore
+                  <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                ></a>
+              </article>
+
+              <article class="c-solution-card">
+                <h3 class="u-h3">Payments</h3>
+                <p class="u-body c-solution-card__desc">Payroll, supplier and collection flows with controls.</p>
+                <a class="c-link" href="#"
+                  >Explore
+                  <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                ></a>
+              </article>
+            </div>
+
+            <a class="c-link c-solutions-mobile__more" href="#"
+              >Show all six solutions
+              <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+            ></a>
+          </div>
+        </section>
+
+        <!-- Solutions: desktop (>= 1024px)-->
+        <section class="c-section c-section--tight c-solutions-section c-section--surface">
+          <div class="c-container">
+            <div class="c-section-head">
+              <div class="c-section-head__text">
+                <h2 class="u-h2">Everything a finance team needs, in one relationship.</h2>
+              </div>
+            </div>
+
+            <div class="c-solutions">
+              <div class="c-solutions__top">
+                <article class="c-solution-card c-solution-card--featured">
+                  <img src="assets/cashManagement.png" alt="Laptop showing a Cash Management dashboard with global cash position and account balances." />
+                  <div class="c-solution-card__body">
+                    <p class="u-label c-solution-card__label">Featured</p>
+                    <h3 class="u-h3">Cash Management</h3>
+                    <p class="u-body c-solution-card__desc">One view of every account, currency and entity, with liquidity moved where it's needed before it becomes a problem.</p>
+                    <p class="u-body-emphasis">Close the month with a position you can trust.</p>
+                    <a class="c-link" href="#"
+                      >Explore cash management
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                </article>
+
+                <div class="c-solutions__stack">
+                  <article class="c-solution-card">
+                    <h3 class="u-h3">Lending &amp; Finance</h3>
+                    <p class="u-body c-solution-card__desc">Corporate loans, acquisition, asset and real estate finance from £1m. Fund the next move without stalling operations.</p>
+                    <a class="c-link" href="#"
+                      >Explore lending
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </article>
+
+                  <article class="c-solution-card">
+                    <h3 class="u-h3">Payments</h3>
+                    <p class="u-body c-solution-card__desc">Payroll, supplier and collections flows with the controls finance teams need. Pay and get paid on predictable terms.</p>
+                    <a class="c-link" href="#"
+                      >Explore payments
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </article>
+
+                  <article class="c-solution-card">
+                    <h3 class="u-h3">International Banking</h3>
+                    <p class="u-body c-solution-card__desc">Accounts, coverage and local knowledge across 40+ markets. Open a market without opening a new bank.</p>
+                    <a class="c-link" href="#"
+                      >Explore international
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </article>
+                </div>
+              </div>
+
+              <div class="c-solutions__row">
+                <article class="c-solution-card c-solution-card--muted">
+                  <div class="c-solution-card__body">
+                    <h3 class="u-h3">Treasury &amp; Risk</h3>
+                    <p class="u-body c-solution-card__desc">FX, interest rate and commodity exposure managed with structures sized to your balance sheet.</p>
+                    <a class="c-link" href="#"
+                      >Explore treasury
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                  <img class="c-solution-card__icon" src="assets/Tressury&amp;Risk.png" alt="" />
+                </article>
+
+                <article class="c-solution-card c-solution-card--muted">
+                  <div class="c-solution-card__body">
+                    <h3 class="u-h3">Digital Banking</h3>
+                    <p class="u-body c-solution-card__desc">Self-serve access to balances, payments, FX and facilities, with role-based approvals.</p>
+                    <a class="c-link" href="#"
+                      >Explore digital
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                  <img class="c-solution-card__icon" src="assets/mobileBanking.png" alt="" />
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Client story: mobile (< 1024px)-->
+      <div id="story">
+        <section class="c-story-mobile">
+          <img class="c-story-mobile__bg" src="assets/confidence.png" alt="" aria-hidden="true" />
+          <div class="c-story-mobile__scrim" aria-hidden="true"></div>
+          <div class="c-container c-story-mobile__content">
+            <p class="u-eyebrow c-story__eyebrow u-eyebrow-mob-client-stroy">Client story · Manufacturing</p>
+            <h2 class="u-h2">Make your next move with confidence.</h2>
+            <p class="u-body-lg c-story-mobile__lede">Northfield Components funded a second site and hedged euro exposure in the same quarter.</p>
+
+            <div class="c-story-mobile__stats">
+              <div>
+                <p class="c-story__stat-value">£42m</p>
+                <p class="u-caption c-story__stat-label">Facility</p>
+              </div>
+              <div>
+                <p class="c-story__stat-value">9 wks</p>
+                <p class="u-caption c-story__stat-label">To drawdown</p>
+              </div>
+            </div>
+
+            <a class="c-button c-button--secondary c-button--on-dark c-button--block" href="#">Read the full story</a>
+          </div>
+        </section>
+
+        <!-- Client story: desktop (>= 1024px)-->
+        <section class="c-story">
+          <div class="c-story__grid">
+            <div class="c-story__media">
+              <img src="assets/confidence.png" alt="" aria-hidden="true" />
+            </div>
+
+            <div class="c-story__content">
+              <p class="u-eyebrow c-story__eyebrow">Client story · Manufacturing</p>
+              <h2 class="u-h2">Make your next move with confidence.</h2>
+              <p class="u-body-lg c-story__lede">
+                Northfield Components needed to fund a second site and hedge euro exposure in the same quarter. A single relationship team structured both, and the plant opened on schedule.
+              </p>
+
+              <div class="c-story__stats">
+                <div>
+                  <p class="c-story__stat-value">£42m</p>
+                  <p class="u-caption c-story__stat-label">Facility structured</p>
+                </div>
+                <div>
+                  <p class="c-story__stat-value">9 weeks</p>
+                  <p class="u-caption c-story__stat-label">Enquiry to drawdown</p>
+                </div>
+                <div>
+                  <p class="c-story__stat-value">2 markets</p>
+                  <p class="u-caption c-story__stat-label">UK and Netherlands</p>
+                </div>
+              </div>
+
+              <a class="c-link c-link--on-dark" href="#"
+                >Read the full story
+                <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Insights: mobile (< 1024px) -->
+      <div id="insights">
+        <section class="c-section c-insights-mobile">
+          <div class="c-container">
+            <h2 class="u-h2">What our specialists are watching</h2>
+
+            <div class="c-insights-mobile__list">
+              <article class="c-insight-card-mobile">
+                <p class="u-label c-insight-card-mobile__category">Working Capital</p>
+                <h3 class="u-h3">Managing cash flow through periods of growth</h3>
+                <div class="c-insight-card-mobile__footer">
+                  <span class="u-caption">6 min read</span>
+                  <a class="c-link" href="#"
+                    >Read
+                    <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                  ></a>
+                </div>
+              </article>
+
+              <article class="c-insight-card-mobile">
+                <p class="u-label c-insight-card-mobile__category">International</p>
+                <h3 class="u-h3">Preparing your business for international expansion</h3>
+                <div class="c-insight-card-mobile__footer">
+                  <span class="u-caption">8 min read</span>
+                  <a class="c-link" href="#"
+                    >Read
+                    <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                  ></a>
+                </div>
+              </article>
+
+              <article class="c-insight-card-mobile">
+                <p class="u-label c-insight-card-mobile__category">Treasury</p>
+                <h3 class="u-h3">Building resilience into your treasury strategy</h3>
+                <div class="c-insight-card-mobile__footer">
+                  <span class="u-caption">5 min read</span>
+                  <a class="c-link" href="#"
+                    >Read
+                    <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                  ></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Insights: desktop (>= 1024px) -->
+        <section class="c-section c-insights-section">
+          <div class="c-container">
+            <div class="c-section-head">
+              <h2 class="u-h2">What our specialists are watching</h2>
+              <a class="c-link" href="#"
+                >All insights
+                <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+              ></a>
+            </div>
+
+            <div class="c-insights">
+              <article class="c-insight-card">
+                <img src="assets/specialist1.png" alt="" />
+                <div class="c-insight-card__body">
+                  <p class="u-label c-insight-card__category">Working Capital</p>
+                  <h3 class="u-h3">Managing cash flow through periods of growth</h3>
+                  <p class="u-body u-muted">Why growing businesses run out of cash while profitable, and the levers that fix it.</p>
+                  <div class="c-insight-card__footer">
+                    <span class="u-caption">6 min read</span>
+                    <a class="c-link" href="#"
+                      >Read
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="c-insight-card">
+                <img src="assets/specialist2.png" alt="" />
+                <div class="c-insight-card__body">
+                  <p class="u-label c-insight-card__category">International</p>
+                  <h3 class="u-h3">Preparing your business for international expansion</h3>
+                  <p class="u-body u-muted">The banking decisions worth making before the first overseas invoice.</p>
+                  <div class="c-insight-card__footer">
+                    <span class="u-caption">8 min read</span>
+                    <a class="c-link" href="#"
+                      >Read
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="c-insight-card">
+                <img src="assets/specialist3.png" alt="" />
+                <div class="c-insight-card__body">
+                  <p class="u-label c-insight-card__category">Treasury</p>
+                  <h3 class="u-h3">Building resilience into your treasury strategy</h3>
+                  <p class="u-body u-muted">Stress-testing rate and currency exposure without overhedging.</p>
+                  <div class="c-insight-card__footer">
+                    <span class="u-caption">5 min read</span>
+                    <a class="c-link" href="#"
+                      >Read
+                      <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CTA -->
+      <div id="cta">
+        <!-- CTA: mobile (< 1024px). -->
+        <section class="c-section c-section--surface c-cta-mobile">
+          <div class="c-container">
+            <h2 class="u-h2">Let's talk about your next move.</h2>
+            <p class="u-body-lg u-muted">Six short steps, around four minutes. Save and return whenever you need to.</p>
+            <div class="c-cta__actions">
+              <a class="c-button c-button--primary c-button--block" href="pages/enquiry.html">Start an enquiry</a>
+              <a class="c-button c-button--secondary c-button--block" href="#solutions">Explore solutions</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA: desktop (>= 1024px). -->
+        <section class="c-section c-section--surface c-cta-section">
+          <div class="c-container">
+            <div class="c-cta">
+              <div>
+                <h2 class="u-h2">Let's talk about your next move.</h2>
+                <p class="u-body-lg u-muted">A relationship director will lead your enquiry before anyone calls. Six short steps, around four minutes, and you can save and return.</p>
+                <div class="c-cta__actions">
+                  <a class="c-button c-button--primary" href="pages/enquiry.html">Start an enquiry</a>
+                  <a class="c-button c-button--secondary" href="#solutions">Explore solutions</a>
+                </div>
+              </div>
+
+              <div class="c-relationship-card">
+                <div class="c-relationship-card__head">
+                  <div class="c-relationship-card__avatar" aria-hidden="true"></div>
+                  <div>
+                    <p class="u-body-emphasis c-relationship-card__title">Relationship team, Northern England</p>
+                    <p class="u-caption c-relationship-card__meta">Manufacturing &amp; logistics desk</p>
+                  </div>
+                </div>
+                <div class="c-relationship-card__divider"></div>
+                <p class="u-body c-relationship-card__meta">Weekdays, 8am–6pm</p>
+                <a class="u-body-emphasis c-relationship-card__phone" href="tel:08000000000">0800 000 0000</a>
+                <a class="c-link" href="#"
+                  >Request a callback
+                  <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="c-footer">
+      <div class="c-container">
+        <div class="c-footer__top">
+          <div>
+            <a class="c-footer__brand" href="index.html" aria-label="Northbridge Corporate Banking — home">
+              <img class="c-footer__logo" src="assets/MarkLogo.png" alt="" />
+              <span class="u-body-emphasis c-footer__brand-name">Corporate Banking</span>
+            </a>
+            <p class="u-body c-footer__blurb">Banking, finance and risk expertise for businesses turning over £6.5m and above.</p>
+          </div>
+
+          <div class="c-footer__columns">
+            <div class="c-footer__col" data-open="false">
+              <h3 class="u-label c-footer__col-title" data-footer-toggle>
+                Solutions
+                <svg class="c-icon c-footer__col-toggle" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </h3>
+              <ul>
+                <li><a href="#">Cash Management</a></li>
+                <li><a href="#">Lending &amp; Finance</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Treasury &amp; Risk</a></li>
+              </ul>
+            </div>
+
+            <div class="c-footer__col" data-open="false">
+              <h3 class="u-label c-footer__col-title" data-footer-toggle>
+                Industries
+                <svg class="c-icon c-footer__col-toggle" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </h3>
+              <ul>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </div>
+
+            <div class="c-footer__col" data-open="false">
+              <h3 class="u-label c-footer__col-title" data-footer-toggle>
+                Company
+                <svg class="c-icon c-footer__col-toggle" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </h3>
+              <ul>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="c-footer__col" data-open="false">
+              <h3 class="u-label c-footer__col-title" data-footer-toggle>
+                Security
+                <svg class="c-icon c-footer__col-toggle" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </h3>
+              <ul>
+                <li><a href="#">Fraud protection</a></li>
+                <li><a href="#">Report fraud</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-footer__bottom">
+          <p class="u-caption">Designed by Raeez Nazar</p>
+          <div class="c-footer__legal-links u-caption">
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+            <a href="#">Regulatory information</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/carousel/vendor/embla-carousel.umd.js"></script>
+    <script src="js/carousel/vendor/embla-carousel-auto-scroll.umd.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

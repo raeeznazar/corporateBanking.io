@@ -1,0 +1,117 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-line);
+  font-weight: var(--font-body-weight);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: inherit;
+}
+
+.u-display {
+  font-size: var(--font-display-size);
+  line-height: var(--font-display-line);
+  font-weight: var(--font-display-weight);
+  letter-spacing: var(--font-display-tracking);
+}
+
+.u-display-mobile-screen {
+  font-size: var(--font-display-size-mob);
+  line-height: var(--font-display-line);
+  font-weight: 500;
+  letter-spacing: var(--font-display-tracking);
+}
+
+.u-h1 {
+  font-size: var(--font-h1-size);
+  line-height: var(--font-h1-line);
+  font-weight: var(--font-h1-weight);
+  letter-spacing: var(--font-h1-tracking);
+}
+
+.u-h2 {
+  font-size: var(--font-h2-size);
+  line-height: var(--font-h2-line);
+  font-weight: var(--font-h2-weight);
+}
+
+.u-h3 {
+  font-size: var(--font-h3-size);
+  line-height: var(--font-h3-line);
+  font-weight: var(--font-h3-weight);
+}
+
+.u-body-lg {
+  font-size: var(--font-body-lg-size);
+  line-height: var(--font-body-lg-line);
+  font-weight: var(--font-body-lg-weight);
+}
+
+.u-body {
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-line);
+}
+
+.u-body-emphasis {
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-line);
+  font-weight: var(--font-body-emphasis-weight);
+}
+
+.u-label {
+  font-size: var(--font-label-size);
+  line-height: var(--font-label-line);
+  font-weight: var(--font-label-weight);
+  letter-spacing: 0.02em;
+}
+
+.u-caption {
+  font-size: var(--font-caption-size);
+  line-height: var(--font-caption-line);
+  font-weight: var(--font-caption-weight);
+  color: var(--color-muted);
+}
+
+.u-eyebrow {
+  font-size: var(--font-label-size);
+  line-height: var(--font-label-line);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.u-muted {
+  color: var(--color-muted);
+}
+
+@media (max-width: 1023px) {
+  .u-display {
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .u-h1 {
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 1.15;
+  }
+
+  .u-h2 {
+    font-size: 1.75rem;
+    /* 28px */
+  }
+
+  .u-h3 {
+    font-size: 1.25rem;
+    /* 20px */
+  }
+}

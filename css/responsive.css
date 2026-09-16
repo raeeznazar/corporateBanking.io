@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Responsive helpers
+   ========================================================================== */
+
+.u-hide-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .u-hide-mobile {
+    display: initial;
+  }
+
+  .u-hide-tablet-up {
+    display: none;
+  }
+}
+
+body[data-nav-open="true"] {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .c-container {
+    overflow-x: hidden;
+  }
+}

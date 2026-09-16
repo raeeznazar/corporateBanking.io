@@ -1,0 +1,371 @@
+/* ==========================================================================
+   Enquiry page specific styles
+   ========================================================================== */
+
+.c-enquiry {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.c-enquiry__intro {
+  margin-bottom: var(--space-2xl);
+}
+
+.c-enquiry__progress {
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.c-enquiry-form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  padding: var(--card-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .c-enquiry-form {
+    padding: var(--card-padding);
+  }
+}
+
+.c-enquiry__alert {
+  margin-bottom: var(--space-2xl);
+}
+
+.c-enquiry-success__ref {
+  display: inline-block;
+  margin-top: var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-background);
+  border-radius: var(--radius-control);
+  font-weight: 600;
+}
+
+/* ---------- Form sections ---------- */
+
+.c-enquiry-form__section {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.c-enquiry-form__section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.c-enquiry-form__eyebrow {
+  color: var(--color-blue-600);
+  margin-bottom: var(--space-sm);
+}
+
+.c-enquiry-form__section-desc {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xl);
+}
+
+.c-enquiry-form__disclaimer,
+.c-enquiry-form__hint,
+.c-enquiry-form__submit-note {
+  margin-top: var(--space-md);
+}
+
+/* ---------- Field rows ---------- */
+
+.c-form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg) var(--space-xl);
+}
+
+.c-form-row .c-form-field {
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .c-form-row,
+  .c-form-row--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .c-form-row--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Prefixed / suffixed inputs (loan amount, interest rate) ---------- */
+
+.c-input-group {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background-color: var(--color-surface);
+  overflow: hidden;
+}
+
+.c-input-group:focus-within {
+  border-color: var(--color-blue-600);
+  box-shadow: 0 0 0 3px rgba(26, 95, 208, 0.15);
+}
+
+.c-form-field--error .c-input-group {
+  border-color: var(--color-error);
+}
+
+.c-form-field--error .c-input-group:focus-within {
+  box-shadow: 0 0 0 3px rgba(179, 38, 30, 0.15);
+}
+
+.c-input-group__addon {
+  display: flex;
+  align-items: center;
+  padding-inline: var(--space-lg);
+  background-color: var(--color-background);
+  color: var(--color-muted);
+  font-weight: 600;
+  border-inline-end: 1px solid var(--color-border);
+}
+
+.c-input-group--suffix .c-input-group__addon {
+  border-inline-end: none;
+  border-inline-start: 1px solid var(--color-border);
+}
+
+.c-input-group .c-input-group__input {
+  border: none;
+  border-radius: 0;
+  min-width: 0;
+  flex: 1;
+}
+
+.c-input-group .c-input-group__input:focus {
+  box-shadow: none;
+}
+
+/* ---------- Loan calculator panel ---------- */
+/* Mobile/tablet: stacked layout (label, badge, value, then a 3-up stat row). */
+
+.c-loan-calc {
+  position: relative;
+  margin-top: var(--space-xl);
+  background-color: var(--color-navy-900);
+  color: #ffffff;
+  border-radius: var(--radius-control);
+  padding: var(--space-xl);
+}
+
+.c-loan-calc__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md);
+  margin-top: var(--space-sm);
+  background-color: var(--color-focus-ring);
+  color: var(--color-navy-900);
+  font-size: var(--font-caption-size);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius-control);
+}
+
+.c-loan-calc__label {
+  font-size: var(--font-caption-size);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.c-loan-calc__value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: var(--space-md);
+}
+
+.c-loan-calc__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.c-loan-calc__stat {
+  min-width: 0;
+  padding-inline: var(--space-sm);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.c-loan-calc__stat:first-child {
+  padding-left: 0;
+}
+
+.c-loan-calc__stat:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.c-loan-calc__stat-value {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  overflow-wrap: break-word;
+}
+
+.c-loan-calc__stat-label {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--font-caption-size);
+  margin-top: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .c-loan-calc {
+    padding: var(--space-2xl);
+  }
+
+  .c-loan-calc__value {
+    font-size: 2.75rem;
+  }
+}
+
+/* Desktop: single row — label/value on the left, badge pinned top-right,
+   stats laid out to the right with vertical dividers. */
+@media (min-width: 1024px) {
+  .c-loan-calc {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xl);
+    padding-top: calc(var(--space-2xl) + var(--space-2xl));
+  }
+
+  .c-loan-calc__badge {
+    position: absolute;
+    top: var(--space-xl);
+    right: var(--space-2xl);
+    margin-top: 0;
+  }
+
+  .c-loan-calc__primary {
+    flex: 0 0 auto;
+    padding-right: var(--space-2xl);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .c-loan-calc__value {
+    margin-top: var(--space-xs);
+  }
+
+  .c-loan-calc__stats {
+    flex: 1;
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .c-loan-calc__stat {
+    flex: 1;
+    padding-inline: var(--space-xl);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .c-loan-calc__stat:first-child {
+    padding-left: 0;
+  }
+
+  .c-loan-calc__stat:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+/* ---------- Authorised signatories ---------- */
+
+.c-signatory {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  overflow: hidden;
+  margin-top: var(--space-lg);
+}
+
+.c-signatory__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.c-signatory__title {
+  font-weight: 600;
+  font-size: var(--font-caption-size);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+.c-signatory__remove {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-error);
+  font-size: var(--font-caption-size);
+  font-weight: 600;
+}
+
+.c-signatory__remove[hidden] {
+  display: none;
+}
+
+.c-signatory__body {
+  padding: var(--space-lg);
+}
+
+.c-signatory-add {
+  width: 100%;
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  border: 1px dashed var(--color-blue-600);
+  border-radius: var(--radius-control);
+  background-color: transparent;
+  color: var(--color-blue-600);
+  font-weight: 600;
+  text-align: center;
+}
+
+.c-signatory-add:hover {
+  background-color: var(--color-blue-50);
+}
+
+/* ---------- Actions ---------- */
+
+.c-enquiry__actions {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.c-enquiry__actions-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .c-enquiry__actions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .c-enquiry__actions-buttons {
+    flex-direction: row;
+  }
+}

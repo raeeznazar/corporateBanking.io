@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Layout primitives — container, section rhythm, grid
+   ========================================================================== */
+
+.c-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .c-container {
+    padding-inline: var(--container-margin-tablet);
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-container {
+    padding-inline: var(--container-margin);
+  }
+}
+
+.c-section {
+  padding-block: var(--section-padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .c-section {
+    padding-block: var(--section-padding);
+  }
+}
+
+.c-section--tight {
+  padding-block: var(--space-5xl);
+}
+
+.c-section--surface {
+  background-color: var(--color-surface);
+}
+
+.c-section--navy {
+  background-color: var(--color-navy-900);
+  color: #ffffff;
+}
+
+.c-skip-link {
+  position: absolute;
+  left: var(--space-lg);
+  top: -100px;
+  background: var(--color-navy-900);
+  color: #fff;
+  padding: var(--space-md) var(--space-lg);
+  z-index: 200;
+  border-radius: var(--radius-control);
+  transition: top 0.15s ease;
+}
+
+.c-skip-link:focus {
+  top: var(--space-lg);
+}
+
+img.u-full-bleed {
+  border-radius: var(--radius-none);
+}

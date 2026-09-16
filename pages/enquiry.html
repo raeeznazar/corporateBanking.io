@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apply for business finance — Corporate Banking</title>
+    <meta name="description" content="Tell us about your business and finance requirements. A relationship director will review your application." />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/pages/enquiry.css" />
+  </head>
+  <body>
+    <a class="c-skip-link" href="#main">Skip to main content</a>
+
+    <header class="c-header">
+      <div class="c-header__utility">
+        <div class="c-container c-header__utility-row">
+          <nav class="c-header__segments" aria-label="Banking area">
+            <a href="#">Personal</a>
+            <a href="#" aria-current="page">Business</a>
+            <a href="#">Private Bank</a>
+            <span class="c-header__region">
+              UK
+              <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </nav>
+        </div>
+      </div>
+
+      <div class="c-header__main">
+        <div class="c-container c-header__main-row">
+          <a class="c-header__brand" href="../index.html" aria-label="Northbridge Corporate Banking — home">
+            <img class="c-header__logo" src="../assets/MarkLogo.png" alt="" />
+            <span class="u-body-emphasis">Corporate Banking</span>
+          </a>
+
+          <nav class="c-nav-primary" aria-label="Primary">
+            <ul>
+              <li><a href="../index.html#solutions">Solutions</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="../index.html#insights">Insights</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </nav>
+
+          <div class="c-header__actions">
+            <a class="c-header__login" href="#">Client log in</a>
+          </div>
+
+          <button class="c-header__menu-toggle" id="nav-open" type="button" aria-haspopup="dialog" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+            <svg class="c-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="c-mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation" data-open="false">
+      <div class="c-mobile-nav__header">
+        <a class="c-header__brand" href="../index.html" aria-label="Northbridge Corporate Banking — home">
+          <img class="c-header__logo" src="../assets/MarkLogo.png" alt="" />
+        </a>
+        <button class="c-mobile-nav__close" id="nav-close" type="button" aria-label="Close menu">
+          <svg class="c-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="c-mobile-nav__body">
+        <ul>
+          <li><a href="../index.html#solutions">Solutions</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="../index.html#insights">Insights</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Client log in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="c-section c-section--tight c-section--surface">
+        <div class="c-container">
+          <div class="c-enquiry">
+            <div class="c-enquiry__intro">
+              <h1 class="u-h1">Apply for business finance</h1>
+              <p class="u-body-lg u-muted" style="margin-top: 25px">
+                Tell us about your business and finance requirements. A relationship director will review your application and get back to you, nothing is charged or committed at this stage.
+              </p>
+            </div>
+
+            <div class="c-alert c-alert--error c-enquiry__alert" id="error-summary" tabindex="-1" role="alert" hidden>
+              <div>
+                <p class="c-alert__title">There is a problem</p>
+                <ul class="c-alert__list" id="error-summary-list"></ul>
+              </div>
+            </div>
+
+            <form class="c-enquiry-form" id="enquiry-form" novalidate>
+              <div class="c-enquiry-form__section">
+                <p class="u-eyebrow c-enquiry-form__eyebrow">Section 1</p>
+                <h2 class="u-h3">Your business</h2>
+                <p class="u-body u-muted c-enquiry-form__section-desc">The questions below change depending on how the business is structured.</p>
+
+                <div class="c-form-row">
+                  <div class="c-form-field" id="field-business-name">
+                    <label class="c-form-field__label" for="businessName">Business name <span class="u-required" aria-hidden="true">*</span></label>
+                    <input
+                      class="c-input"
+                      type="text"
+                      id="businessName"
+                      name="businessName"
+                      placeholder="e.g. RN Components"
+                      autocomplete="organization"
+                      aria-describedby="field-business-name-error"
+                      required
+                    />
+                    <p class="c-form-field__error" id="field-business-name-error" data-error-message role="alert"></p>
+                  </div>
+
+                  <div class="c-form-field" id="field-business-type">
+                    <label class="c-form-field__label" for="businessType-button">Business type <span class="u-required" aria-hidden="true">*</span></label>
+                    <div class="c-select" data-select data-open="false" id="businessType">
+                      <button
+                        type="button"
+                        class="c-select__button"
+                        id="businessType-button"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-describedby="field-business-type-error field-business-type-hint"
+                      >
+                        <span class="c-select__value c-select__value--placeholder">Select business type</span>
+                        <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                          <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <ul class="c-select__listbox" role="listbox" tabindex="-1" aria-labelledby="businessType-button">
+                        <li class="c-select__option c-select__option--placeholder" id="businessType-opt-0" role="option" data-value="" aria-selected="true">Select business type</li>
+                        <li class="c-select__option" id="businessType-opt-1" role="option" data-value="sole-trader" aria-selected="false">Sole Trader</li>
+                        <li class="c-select__option" id="businessType-opt-2" role="option" data-value="limited-company" aria-selected="false">Limited Company</li>
+                        <li class="c-select__option" id="businessType-opt-3" role="option" data-value="partnership-llp" aria-selected="false">Partnership / LLP</li>
+                      </ul>
+                      <input type="hidden" name="businessType" id="businessType-value" required />
+                    </div>
+                    <p class="c-form-field__error" id="field-business-type-error" data-error-message role="alert"></p>
+                    <p class="c-form-field__hint" id="field-business-type-hint">Further questions depend on your answer.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-enquiry-form__section">
+                <p class="u-eyebrow c-enquiry-form__eyebrow">Section 2</p>
+                <h2 class="u-h3">Finance requirements</h2>
+                <p class="u-body u-muted c-enquiry-form__section-desc">Your estimated repayment updates as you type. Nothing is submitted.</p>
+
+                <div class="c-form-row c-form-row--3">
+                  <div class="c-form-field" id="field-loan-amount">
+                    <label class="c-form-field__label" for="loanAmount">Loan amount <span class="u-required" aria-hidden="true">*</span></label>
+                    <div class="c-input-group">
+                      <span class="c-input-group__addon" aria-hidden="true">£</span>
+                      <input
+                        class="c-input c-input-group__input"
+                        type="text"
+                        inputmode="numeric"
+                        id="loanAmount"
+                        name="loanAmount"
+                        value="2400000"
+                        aria-describedby="field-loan-amount-error field-loan-amount-hint"
+                        required
+                      />
+                    </div>
+                    <p class="c-form-field__error" id="field-loan-amount-error" data-error-message role="alert"></p>
+                    <p class="c-form-field__hint" id="field-loan-amount-hint">£25,000 to £10,000,000</p>
+                  </div>
+
+                  <div class="c-form-field" id="field-interest-rate">
+                    <label class="c-form-field__label" for="interestRate">Interest rate <span class="u-required" aria-hidden="true">*</span></label>
+                    <div class="c-input-group c-input-group--suffix">
+                      <input
+                        class="c-input c-input-group__input"
+                        type="text"
+                        inputmode="decimal"
+                        id="interestRate"
+                        name="interestRate"
+                        value="6.4"
+                        aria-describedby="field-interest-rate-error field-interest-rate-hint"
+                        required
+                      />
+                      <span class="c-input-group__addon" aria-hidden="true">%</span>
+                    </div>
+                    <p class="c-form-field__error" id="field-interest-rate-error" data-error-message role="alert"></p>
+                    <p class="c-form-field__hint" id="field-interest-rate-hint">0% to 25%</p>
+                  </div>
+
+                  <div class="c-form-field" id="field-term">
+                    <label class="c-form-field__label" for="term-button">Term</label>
+                    <div class="c-select" data-select data-open="false" id="term">
+                      <button type="button" class="c-select__button" id="term-button" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="c-select__value">60 months</span>
+                        <svg class="c-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                          <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <ul class="c-select__listbox" role="listbox" tabindex="-1" aria-labelledby="term-button">
+                        <li class="c-select__option" id="term-opt-12" role="option" data-value="12" aria-selected="false">12 months</li>
+                        <li class="c-select__option" id="term-opt-24" role="option" data-value="24" aria-selected="false">24 months</li>
+                        <li class="c-select__option" id="term-opt-36" role="option" data-value="36" aria-selected="false">36 months</li>
+                        <li class="c-select__option" id="term-opt-48" role="option" data-value="48" aria-selected="false">48 months</li>
+                        <li class="c-select__option" id="term-opt-60" role="option" data-value="60" aria-selected="true">60 months</li>
+                        <li class="c-select__option" id="term-opt-84" role="option" data-value="84" aria-selected="false">84 months</li>
+                        <li class="c-select__option" id="term-opt-120" role="option" data-value="120" aria-selected="false">120 months</li>
+                      </ul>
+                      <input type="hidden" name="term" id="term-value" value="60" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-loan-calc" aria-live="polite">
+                  <div class="c-loan-calc__primary">
+                    <p class="c-loan-calc__label">Estimated monthly repayment</p>
+                    <span class="c-loan-calc__badge">Illustrative estimate</span>
+                    <p class="c-loan-calc__value" id="calc-monthly">£0</p>
+                  </div>
+                  <div class="c-loan-calc__stats">
+                    <div class="c-loan-calc__stat">
+                      <p class="c-loan-calc__stat-value" id="calc-total-repayable">£0</p>
+                      <p class="c-loan-calc__stat-label">Total repayable</p>
+                    </div>
+                    <div class="c-loan-calc__stat">
+                      <p class="c-loan-calc__stat-value" id="calc-total-interest">£0</p>
+                      <p class="c-loan-calc__stat-label">Total interest</p>
+                    </div>
+                    <div class="c-loan-calc__stat">
+                      <p class="c-loan-calc__stat-value" id="calc-term-display">60 months</p>
+                      <p class="c-loan-calc__stat-label">Term</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="u-caption c-enquiry-form__disclaimer">
+                  Illustrative estimate only. Not an offer of finance. Figures assume monthly repayments and exclude fees. Any facility is subject to status, credit assessment and documentation.
+                </p>
+              </div>
+
+              <div class="c-enquiry-form__section">
+                <p class="u-eyebrow c-enquiry-form__eyebrow">Section 3</p>
+                <h2 class="u-h3">Authorised signatories</h2>
+                <p class="u-body u-muted c-enquiry-form__section-desc">Add anyone who will need to approve payments or sign documents. At least one is required.</p>
+
+                <div id="signatories">
+                  <div class="c-signatory" data-signatory data-index="1">
+                    <div class="c-signatory__header">
+                      <span class="c-signatory__title">Authorised signatory 1</span>
+                      <button type="button" class="c-signatory__remove" data-remove-signatory hidden aria-label="Remove authorised signatory 1">
+                        <svg class="c-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                          <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        Remove
+                      </button>
+                    </div>
+                    <div class="c-signatory__body c-form-row c-form-row--3">
+                      <div class="c-form-field" data-field="fullName">
+                        <label class="c-form-field__label" for="signatory-1-fullName">Full name <span class="u-required" aria-hidden="true">*</span></label>
+                        <input class="c-input" type="text" id="signatory-1-fullName" name="signatory-1-fullName" autocomplete="name" required />
+                        <p class="c-form-field__error" data-error-message role="alert"></p>
+                      </div>
+                      <div class="c-form-field" data-field="role">
+                        <label class="c-form-field__label" for="signatory-1-role">Role <span class="u-required" aria-hidden="true">*</span></label>
+                        <input class="c-input" type="text" id="signatory-1-role" name="signatory-1-role" autocomplete="organization-title" required />
+                        <p class="c-form-field__error" data-error-message role="alert"></p>
+                      </div>
+                      <div class="c-form-field" data-field="email">
+                        <label class="c-form-field__label" for="signatory-1-email">Email <span class="u-required" aria-hidden="true">*</span></label>
+                        <input class="c-input" type="email" id="signatory-1-email" name="signatory-1-email" autocomplete="email" required />
+                        <p class="c-form-field__error" data-error-message role="alert"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="c-signatory-add" id="add-signatory">+ Add another authorised signatory</button>
+                <p class="u-caption c-enquiry-form__hint">Removing a signatory renumbers the remaining entries.</p>
+              </div>
+
+              <div class="c-enquiry__actions">
+                <div class="c-enquiry__actions-buttons">
+                  <button class="c-button c-button--primary" type="submit">Review and submit</button>
+                  <button class="c-button c-button--secondary" type="button" id="reset-form">Reset form</button>
+                </div>
+                <p class="u-caption" id="signatory-counter">1 of 1 signatories complete</p>
+              </div>
+              <p class="u-caption c-enquiry-form__submit-note">Submit opens the success page once every field is valid.</p>
+            </form>
+
+            <div class="c-alert c-alert--success" id="success-panel" tabindex="-1" hidden>
+              <div>
+                <p class="c-alert__title">Application received</p>
+                <p class="c-alert__desc">A relationship director will be in touch within one business day. Your progress is kept for 30 days.</p>
+                <span class="c-enquiry-success__ref" id="success-ref"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer">
+      <div class="c-container">
+        <div class="c-footer__bottom c-footer__bottom--standalone">
+          <p class="u-caption">Designed by Raeez Nazar</p>
+          <div class="c-footer__legal-links u-caption">
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+            <a href="#">Regulatory information</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/enquiry.js"></script>
+  </body>
+</html>
